@@ -1,0 +1,28 @@
+.home-page_tabs-tab {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.home-page_tt-item {
+  height: 100%;
+  font-size: 14px;
+  color: #999;
+  flex-grow: 1;
+  text-align: center;
+  line-height: 40px;
+  border: 1px solid #e6e9e8;
+  border-left-color: transparent;
+  background: #f4f7f7;
+  &:last-child {
+    border-right-color: transparent;
+  }
+  &.active {
+    color: #333;
+    background: #fff;
+    border-bottom-color: transparent;
+  }
+  &.disabled {
+    pointer-events: none;
+  }
+}
